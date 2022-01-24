@@ -5,7 +5,7 @@
 
 
 int main(void) {
-  float num1, num2, resultado = 0; // aqui declaramos nossas varáveis para execução do calculo
+  double num1, num2, resultado = 0; // aqui declaramos nossas varáveis para execução do calculo
   int x = 0;
   char op = '0'; //declaramos nossa vriavel de atribuição para nosso loop
 
@@ -28,11 +28,11 @@ int main(void) {
 
     printf("Digite o primeiro número: \n");
     printf("\t\t\t\t\t\t\t>>> ");
-    scanf(" %f", &num1);
+    scanf(" %lf", &num1);
     setbuf(stdin, NULL);
     printf("Digite o segundo número: \n");
     printf("\t\t\t\t\t\t\t>>> ");
-    scanf(" %f", &num2);
+    scanf(" %lf", &num2);
     setbuf(stdin, NULL);
     printf("\n");
 // loop utilizando a concatenação de if's e elses..
@@ -50,7 +50,7 @@ int main(void) {
           }
         }
       }
-    printf("O resultado da operação é >>> > %f <\n\n", resultado);//imprimimos o resultado para o usuário
+    printf("O resultado da operação é >>> > %lf <\n\n", resultado);//imprimimos o resultado para o usuário
     printf("Para continuar digite ""QUALQUER TECLA!!"": \n\n");//damos uma pausa no programa
     getchar();
     system("clear");//limpamos a tela
